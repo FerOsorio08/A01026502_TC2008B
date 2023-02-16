@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Cheat Sheet</title>
 </head>
+<body style="background-color:#faf3e3;"></body>
 <style>
 body {
     font-family: 'Ahsing','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
@@ -31,23 +32,39 @@ body {
     border-top: 8px solid #ed28b5;
     border-radius: 5px;
   }
+
+  h2.orangeBack{
+    color:#ff9147;background-color:#f7ead5;
+  }
+  h2.redBack{
+    color:#ff6347;background-color:#f7d7d5;
+  }
+  h2.pinkBack{
+    color:#d42fbe;background-color:#f7d5f5;
+  }
+  h2.blueBack{
+    color:#3c6ce6;background-color:#d5e8f7;
+  }
+  h2.purpleBack{
+    color:#872fd4;background-color:#e6d5f7;
+  }
 </style>
 
 <body>
     <h1>HTML Cheat Sheet</h1>
 
-    <h2 style="color:#ff9147;">a - Hiperlinks</h2>
+    <h2 class="orangeBack">a - Hiperlinks</h2>
     <p></p> Sirven para hacer un link de una página a otro recurso en la web, sea otro archivo en el servidor web, u otra página web.</p>
     <p>Por ejemplo <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> El siguiente link muestra un video de cómo funcionan los hyperlinks!</a> </p>
     <p style="color:tomato;">Por ejemplo <a href = "https://htmlcheatsheet.com/"target="_blank"> HTML cheat sheet online</a> </p>
     <hr class="dashed">
 
-    <h2 style="color:#ff6347;">p- Paragraphs</h2>
+    <h2 class="redBack">p- Paragraphs</h2>
     <p>Los <strong>headers</strong> van seguidos de parrafos más pequeños que se hacen usando <em> el tag p</p></em></p> 
     <hr class="rounded">
 
 
-    <h2 style="color:#d42fbe;">h- Headers (h1, h2, h3, h4, h5, h6)</h2>
+    <h2 class="pinkBack">h- Headers (h1, h2, h3, h4, h5, h6)</h2>
     <p>Existen diferentes tipos de <strong>heading elements</strong> que se pueden usar para representar diferentes titulos y subtitlos</p>
     <h3>This is a header 3, adding colors</h3>
     <p style="color:orchid;font-size: 18px;">Para agregrar color hay que usar : <i>style="color:elcolor;"</i>, con eso se cambia el color</p>
@@ -59,26 +76,27 @@ body {
     <hr class="dotted">
 
 
-    <h2 style="color:#3c6ce6;">div - Divisions</h2>
+    <h2 class="blueBack">div - Divisions</h2>
     <div> Aqui hay un <strong style="color:#3c6ce6;"">div </strong></div>
     <div> div no tiene un valor semántico pero se usa para lejivilidad de la página</div>
     <div> <em>Italic text</em></div>
     <!-- agregrar comentarios  --> 
     <hr class="solid">
 
-    <h2 style="color:#872fd4;">span - Spans </h2>
+    <h2 class="purpleBack">span - Spans </h2>
     <p>Spans son elementos de HTML que actuan como contenedores que sirven para propositos de estilo</p>
     <span> Aqui hay un <strong style="color:#872fd4;">span</strong></span>
     <br /> 
     <hr class="dashed">
 
 
-    <h2 style="color:#ff6347;"> Strong </h2>
+    <h2 class="redBack"> Strong </h2>
     <p1>El tag <strong style="color:#ff6347;">strong</strong> vuelve el texto en bold lo que le da cierta importancia dentro del texto. Cambia el grosor de la letra sin alterar la palabra</p1>
     <br /> <strong>Bold text</strong>
     <hr class="rounded">
 
-    <h2 style="color:#d42fbe;">i / em</h2>
+    <h2 class="pinkBack">i / em</h2>
+    <img src="https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/5dd2e00146be1e008c505952_011%20-%20hot%20pink.png"  width="500" height="333">
 
 
 
