@@ -6,24 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Cheat Sheet</title>
 </head>
+<style>body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  }
+  
+  /* Dashed border */
+  hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+</style>
+
 <body>
     <h1>HTML Cheat Sheet</h1>
 
     <h2>a - Hiperlinks</h2>
+    
     <p></p> Sirven para hacer un link de una página a otro recurso en la web, sea otro archivo en el servidor web, u otra página web.</p>
-
     <p>Por ejemplo <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> El siguiente link muestra un video de cómo funcionan los hyperlinks!</a> </p>
 
-    <p>Por ejemplo <a href = "https://htmlcheatsheet.com/"> HTML cheat sheet online</a> </p>
+    <p style="color:tomato;">Por ejemplo <a href = "https://htmlcheatsheet.com/"target="_blank"> HTML cheat sheet online</a> </p>
 
-    <h3>This is a header 3</h3>
+    <hr class="dashed">
+
+    <h2>p- Paragraphs</h2>
+
+    <p>Los <strong>headers</strong> van seguidos de parrafos más pequeños que se hacen usando <em> el tag p</p></em></p> 
+    <hr>
+
+    <h2>h- Headers</h2>
+    <p>Existen diferentes tipos de <strong>heading elements</strong> que se pueden usar para representar diferentes titulos y subtitlos</p>
+    <h3>This is a header 3, adding colors</h3>
+    <p style="color:orchid;font-size: 18px;">Para agregrar color hay que usar : <i>style="color:elcolor;"</i>, con eso se cambia el color</p>
+
     <h4>This is a header 4</h4>
     <h5>This is a header 5</h5>
+    <h6>This is a header 6</h6>
     <strong>Bold text</strong>
     <br /> 
     <!-- esto hace line break -->
+    <h2>div - Divisions</h2>
+    <div> div no tiene un valor semántico pero se usa para lejivilidad de la página</div>
+    <div> <em>Italic text</em></div>
     <!-- agregrar comentarios  --> 
-    <em>Italic text</em>
+    
 
 </body>
 </html>
