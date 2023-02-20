@@ -94,6 +94,13 @@ article{
   margin: 0 1.5%;
   width: 30%;
 }
+table,th, td {
+  border: 3px solid #d42fbe;
+  border-collapse: collapse;
+}
+th {
+  background-color: #f7c9f6;
+}
 </style>
 
 <body>
@@ -300,6 +307,11 @@ article{
       columnas y filas.
       <h4> Tags de tabla</h4>
       &#x2022;  <b>td:</b> representa "table data"
+      <br>&#x2022; <b>tr:</b> representa "table row"
+      <br>&#x2022; <b>th:</b> representa "table header"
+      <br>&#x2022; <b>caption:</b> representa "table caption"
+      <br>&#x2022; <b>colgroup:</b> representa un grupo de una o más columnas en una tabla
+      <br>&#x2022; <b>col:</b> representa propiedades de columna para cada columna del colgroup.
     </p>
     <table>
       <tr>
@@ -318,6 +330,41 @@ article{
         <td>Mexico</td>
       </tr>
     </table>
+  </section>
+
+  <!-- UL -->
+  <aside>
+    <h2 class="blueBack">ul- Unordered lists</h2>
+    <p>
+      El elemento <b style="color: #3c6ce6;">ul</b> representa listas sin orden específico.
+    </p>
+    <ul style="list-style-type:circle">
+      <li>Esto</li>
+      <li>Es </li>
+      <li>un ejemplo</li>
+    </ul>
+    <hr class="dotted">
+    <br />
+    
+  </aside>
+
+  <!-- OL -->
+  <article>
+    <h2 class="purpleBack">ol- Ordered lists</h2>
+    <p>
+      Este elemento hace listas ordenadas, a diferencia de ul. 
+      Estas listas pueden estar ordenadas númerica o alfabeticamente.
+    </p>
+    <ol start="1">
+      <li>puede tener start</li>
+      <li>puede ser reversed</li>
+      <li>puede usar diferentes tipos como: 1, A, i, </li>
+    </ol>
+    <ol style="list-style-type:upper-roman">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      </ol>
   </section>
 
 
