@@ -79,6 +79,21 @@
   img {
   border: 10px solid #150a79;
 }
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+article{
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
 </style>
 
 <body>
@@ -177,18 +192,18 @@
     <p>Aquí hay una ejemplo de <b style="color: #d42fbe;"">Section</b> </p>
             <br /> Puede llevar varios breaks que siguen dentro.
             <hr class=" dotted">
-  </section>
+    </section>
 
 
   <!-- Article -->
-  <article>
+  <section>
     <h2 class="blueBack">Article</h2>
     <p>Un elemento <b style="color: #3486eb;">article</b> se usa para identificar una sección independiente.</p>
     <p>Se puede usar para marcar blogs, artículos, etc...</p>
     <p>Al hacer un artículo hay que pensar si la información puede ser removida sin <u>ninguna</u> repercusión en el
       sentido.</p>
     <hr class="solid">
-  </article>
+  </section>
 
   <!-- Aside -->
   <aside>
@@ -216,16 +231,18 @@
 
   <!-- Navigation -->
   <nav>
+    <br />
     <h2 class="pinkBack">nav- Navigation</h2>
     <p>Aquí hay un ejemplo de <b style="color: #d42fbe;">nav</b>, este elemento
       se usa para identificar secciones con links de navegación a lo largo de la página o a otras páginas.
     </p>
     <br />
-    <hr class="dotted">
+    
   </nav>
 
   <!-- IMAGES -->
   <article>
+    <hr class="dotted">
     <h2 class="blueBack">img-Images</h2>
     <p>Para poder insertar imágenes se usa el tag <b style="color: #3c6ce6;">img</b>
       asi mismo se puede determinar el tamaño de la imágen, y el <i>alt</i> que sirve para dar
@@ -273,7 +290,7 @@
   </article>
 
   <!-- Table -->
-  <article>
+  <section>
     <br />
     <hr class="rounded">
     <h2 class="pinkBack">Tables</h2>
@@ -301,7 +318,7 @@
         <td>Mexico</td>
       </tr>
     </table>
-  </article>
+  </section>
 
 
 </body>
