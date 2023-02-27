@@ -1,9 +1,38 @@
 h1 {
-    color: blue;
-    background-color: yellow;
-    border: 1px solid black;
+    color: #0c2769;
+    background-color: #9eb7f6;
+    border: 1px solid #002ea2;
+  }
+  h2.orangeBack {
+    color: #ff9147;
+    background-color: #f7ead5;
+  }
+
+  h2.redBack {
+    color: #ff6347;
+    background-color: #f7d7d5;
+  }
+
+  h2.pinkBack {
+    color: #d42fbe;
+    background-color: #f7d5f5;
+  }
+
+  h2.blueBack {
+    color: #3c6ce6;
+    background-color: #d5e8f7;
+  }
+
+  h2.purpleBack {
+    color: #872fd4;
+    background-color: #e6d5f7;
   }
   
   p {
     color: red;
+  }
+
+  p.border {
+    border-style: dotted;
+    border-color: #3076f8;
   }
