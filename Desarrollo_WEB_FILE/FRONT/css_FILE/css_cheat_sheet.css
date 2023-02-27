@@ -109,6 +109,18 @@ div.borderRadius {
   padding: 20px 50px;
 }
 
+#overflow{
+    width: 100px;
+    height: 165px;
+    background-color: rgb(254, 208, 191);
+    overflow: scroll;
+  
+}
+
+#display{
+  display: block;
+}
+
 p {
   color: #0b072c;
 }
