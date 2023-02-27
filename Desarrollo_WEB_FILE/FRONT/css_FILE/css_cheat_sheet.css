@@ -2,37 +2,17 @@ body {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
-h1 {
-  color: #0c2769;
-  background-color: #9eb7f6;
-  border: 1px solid #002ea2;
-  font-size: 3rem;
-}
+h1 {color: #0c2769;background-color: #9eb7f6;border: 1px solid #002ea2;font-size: 3rem;}
 
-h2.orangeBack {
-  color: #ff9147;
-  background-color: #f7ead5;
-}
+h2.orangeBack {color: #ff9147;background-color: #f7ead5;}
 
-h2.redBack {
-  color: #ff6347;
-  background-color: #f7d7d5;
-}
+h2.redBack {color: #ff6347;background-color: #f7d7d5;}
 
-h2.pinkBack {
-  color: #d42fbe;
-  background-color: #f7d5f5;
-}
+h2.pinkBack {color: #d42fbe;background-color: #f7d5f5;}
 
-h2.purpleBack {
-  color: #872fd4;
-  background-color: #e6d5f7;
-}
+h2.purpleBack {color: #872fd4;background-color: #e6d5f7;}
 
-h2.blueBack {
-  color: #3c6ce6;
-  background-color: #d5e8f7;
-}
+h2.blueBack {color: #3c6ce6;background-color: #d5e8f7;}
 
 hr.dotted {border-top: 7px dotted #3486eb;}
 
@@ -111,6 +91,24 @@ div.borderRadius {
   list-style-type: square;
 }
 
+.center {
+  margin:  auto;
+  background: #f4bbb1;
+  border: #f8836e;
+  border-width: 2rem;
+  width: 66%;
+}
+
+#lotpadding{
+  background-color: #f4bbb1;
+  padding: 110px 50px 50px 110px;
+}
+
+#littlepadding{
+  background-color: #f4bbb1;
+  padding: 20px 50px;
+}
+
 p {
   color: #0b072c;
 }
@@ -119,4 +117,17 @@ aside {
   float: right;
   margin: 0 5.5%;
   width: 40%;
+}
+
+ul li::before {
+  content: "+ ";
+}
+ul {
+  background: #fbd3ff;
+  padding: 20px;
+}
+ul li {
+  background: #ffc1ff;
+  color: #871c90;
+  margin: 3px;
 }
