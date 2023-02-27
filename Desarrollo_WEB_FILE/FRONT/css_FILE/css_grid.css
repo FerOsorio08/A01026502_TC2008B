@@ -1,15 +1,51 @@
-body,html{
-    margin :0;
-    padding: 0;
+*{
+    box-sizing: border-box;
+    /* que el borde siempre este en el contenedor mayor */
 }
+
+body,html{margin :0;padding: 0;}
+
 .grid-container{
     padding: 10px;
-    background-color: #d5e8f7;
+    height: 100vh;
+    /* view port */
+    background-color: #aecfe8;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 10px;
+    /* grid-template-areas: 
+        "header header header"
+        ".  content ."
+        ".  content ."
+        ".  content .";
+        /* para definir donde queremos que se considere una columna o no */
+     
+
 }
+
 .grid-item{
-    background-color: #519cd5;
+    background-color: #4088c0;
+    padding: 10px;
+    margin: 10px;
 }
+
 .grid-item:nth-child(even)
 {
-    background-color: #74b9ee;
+    background-color: #82bfee;
+}
+
+#grid-header{
+    /* grid-area: header; */
+    grid-column: 1 / -1 
+    /* empieza en la primera y va hasta la ultima columna */
+}
+#grid-content{
+    /* grid-area: content; */
+    grid-row: 2 / span 3;
+    grid-column: 2 ;
+}
+#grid-footer{
+    grid-column: 1 /span 3;
 }
