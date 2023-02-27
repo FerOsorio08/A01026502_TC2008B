@@ -1,20 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href= "/Desarrollo_WEB_FILE/FRONT/css_FILE/css_cheat_sheet.css"/>
-    
-</head>
-<body>
-    <h1 style="text-align:center;">HTML Cheat Sheet</h1>
-   <h4 style="text-align:center;">by Fernanda Osorio(A01026502)</h4>
+    <link rel="stylesheet" type="text/css" href="/Desarrollo_WEB_FILE/FRONT/css_FILE/css_cheat_sheet.css" />
 
+</head>
+
+<body>
+    <h1 style="text-align:center;">CSS Cheat Sheet</h1>
+    <h4 style="text-align:center; color: #0b072c;">by Fernanda Osorio(A01026502)</h4>
+
+
+    <div class="border">
+        <h2 class="blueBack" style="text-align:top;">Borders</h2>
+        <p>
+            Esto es un ejemplo de <strong>borders </strong> aplicado en una división.
+            Los bordes se pueden usar para separar secciones o marcar información.
+            Tambien existen diferentes estilos como: dotted, solid, rounded, entre otros.
+        </p>
+    </div>
+    <br \>
+
+    <div class="borderSides">
+        <h2 class="blueBack">Border Sides</h2>
+        <p>
+            Los bordes pueden tener diferentes estilos en cada lado! Como: <strong>border-left, border-right,
+                border-top, border-bottom </strong>.
+            <br> Esta es una división que usa diferentes estilos en un mismo borde.
+        </p>
+
+    </div>
+    <br \>
+
+    <div class="borderRadius">
+        <h2 class="blueBack">Border Radius</h2>
+        <p>
+            <strong>border -radius</strong> es una propiedad que se usa para agregar bordes redondos
+            a cualquier elemento.
+        </p>
+    </div>
+    <br \>
+    <hr class="dotted">
+
+    <div id="ImageBack" class="border" style="border-color:#872fd4;">
+        <h2 class="purpleBack"> Background images</h2>
+        <p>
+            <strong>
+                Es una propiedad que se puede usar para poner imagenes de fondo.
+                Este es un ejemplo de como poner una imagen de fondo en una divisón, aun qué se puede colocar más de
+                una.
+                <br>
+                Por defecto las imagenes se colocan en la esquina superior izquierda de un elemento.El fondo de
+                cualquier
+                elemento es su tamaño total desde el borde hasta el padding.
+            </strong>
+        </p>
+    </div>
+    <br \>
 
     <div>
-        <h2 class="blueBack">Borders</h2>
+        <h2 id="rainbow"> Colors Colors Colors Colors Colors Colors Colors Colors Colors Colors</h2>
+        <p>
+            Los <b>colores</b> en <i>css</i> se usan con nombres predeterminados o con valores: RGB, HEX, HSL, RGBA,
+            HSLA.
+            Estos también se pueden usar para establecer colores de fondo, de texto y de bordes. <br>
+            Diferentes nombres de colores pueden tener el mismo valor. <br>
+            <img src="https://i.pinimg.com/564x/c4/54/07/c45407467bc7f08685da0e88405849c2.jpg" alt="red color values"
+                width="300" height="350">
+            <img src="https://i.pinimg.com/564x/ae/9a/b8/ae9ab8da8ce89fe69b14f58221205c81.jpg" alt="red color values"
+                width="400" height="350">
+            <img src="https://i.pinimg.com/564x/4b/d9/da/4bd9da4ce856fc1c5640e2d9f28ed540.jpg" alt="red color values"
+                width="400" height="350">
+            <img src="https://i.pinimg.com/564x/31/46/da/3146da4ae011bdf8b435f072470d0f20.jpg" alt="red color values"
+                width="200" height="350">
+        </p>
     </div>
+    <hr class="solid">
+    <br \>
+
+    <div>
+        <h2 class="purpleBack">Font / Font - Family</h2>
+        <p>
+            La selección de <b>font </b>es de suma importancia, puede hacer la diferencia al leer una página web.
+            La letra también puede dar identidad. Es importante que siempre sea lejible ya que esta puede quitar y
+            agregar valor al texto. <br>
+            En <i><strong>css</strong> </i> hay 5 <b>font-families</b> genéricas:
+        </p>
+        <ol start="1">
+            <li>Serifs</li>
+            <li>Sans-serif</li>
+            <li>Monospace</li>
+            <li>Cursive</li>
+            <li>Fantasy</li>
+        </ol>
+        <img src="https://i.pinimg.com/564x/6f/b2/62/6fb262a622a97a5e4861f51bc6e1efda.jpg" alt="different font families"
+            width="200" height="350">
+        <aside id="purpleBorder">
+            <h2 class="purpleBack">Font style</h2>
+            <p>
+                El <b>font-style</b> es una propiedad que se usa para editar texto. Esta propiedad tiene 3 valores:
+            </p>
+            <ol class="inside">
+                <li>normal</li>
+                <li><i>italic</i></li>
+                <li>
+                    <oblique>oblique</oblique>
+                </li>
+            </ol>
+        </aside>
+        <h2 class="purpleBack">Font weight</h2>
+        <p>
+            El <b>font-weight</b> es una propiedad que se usa para determinar el "peso" del texto. Esta propiedad
+            tiene 2 valores:
+        </p>
+        <ol start="1">
+            <li>normal</li>
+            <li><b>bold</b></li>
+        </ol>
+    </div>
+    <br \>
+    <hr class="rounded">
+
+    <div>
+        <h2 class="pinkBack"> Width, Height</h2>
+        <p>
+            En <i>css</i> <b> width y height </b> son propiedades que se usan para determinar el largo y ancho de un objeto.
+            Estas propiedades no incluyen los marcos ni los bordes; se puede usar <b>max-width</b> para seleccionar el tamaño
+            maximo de un objeto.<br>
+            Estas propiedades pueden tener los siguientes valores: auto, length, % (porcentaje), initial, inherit.
+            <br> Un ejemplo de esto es el aside de <i>font-style</i>.
+        </p>
+        <br \>
+        <h2 class="pinkBack"> List - style</h2>
+        <p>
+            <b>List style</b> en css permite seleccionar todas las propiedades de una lista a la vez.
+            Se puede configurar : list-style-image,  list-style-position y list style type.
+        </p>
+    </div>
+
 </body>
+
 </html>

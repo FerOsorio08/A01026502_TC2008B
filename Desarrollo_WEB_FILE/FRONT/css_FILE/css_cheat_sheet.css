@@ -1,38 +1,122 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 h1 {
-    color: #0c2769;
-    background-color: #9eb7f6;
-    border: 1px solid #002ea2;
-  }
-  h2.orangeBack {
-    color: #ff9147;
-    background-color: #f7ead5;
-  }
+  color: #0c2769;
+  background-color: #9eb7f6;
+  border: 1px solid #002ea2;
+  font-size: 3rem;
+}
 
-  h2.redBack {
-    color: #ff6347;
-    background-color: #f7d7d5;
-  }
+h2.orangeBack {
+  color: #ff9147;
+  background-color: #f7ead5;
+}
 
-  h2.pinkBack {
-    color: #d42fbe;
-    background-color: #f7d5f5;
-  }
+h2.redBack {
+  color: #ff6347;
+  background-color: #f7d7d5;
+}
 
-  h2.blueBack {
-    color: #3c6ce6;
-    background-color: #d5e8f7;
-  }
+h2.pinkBack {
+  color: #d42fbe;
+  background-color: #f7d5f5;
+}
 
-  h2.purpleBack {
-    color: #872fd4;
-    background-color: #e6d5f7;
-  }
-  
-  p {
-    color: red;
-  }
+h2.purpleBack {
+  color: #872fd4;
+  background-color: #e6d5f7;
+}
 
-  p.border {
-    border-style: dotted;
-    border-color: #3076f8;
-  }
+h2.blueBack {
+  color: #3c6ce6;
+  background-color: #d5e8f7;
+}
+
+hr.dotted {border-top: 7px dotted #3486eb;}
+
+hr.solid {border-top: 7px solid #872fd4;}
+
+hr.dashed {border-top: 3px dashed #ff6347;}
+
+hr.rounded {border-top: 8px solid #ed28b5;border-radius: 5px;}
+
+div.border {
+  border-style: solid;
+  border-color: #3076f8;
+  border-width: 4px;
+  background-color: #d5e8f7;
+}
+
+div.borderSides {
+  border-color: #1a52ba;
+  border-width: 4px;
+  border-top-style: double;
+  border-right-style: dotted;
+  border-bottom-style: ridge;
+  border-left-style: solid;
+  background-color: #d5e8f7;
+}
+
+div.borderRadius {
+  border: 4px groove #3076f8;
+  border-radius: 7px;
+  background-color: #d5e8f7;
+}
+
+#ImageBack {
+  background-image: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+  background-color: #d9bcf6;
+}
+
+#rainbow {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#rainbow02 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -4px 4px #ef3550,
+    -8px 8px #f48fb1,
+    -12px 12px #7e57c2,
+    -16px 16px #2196f3,
+    -20px 20px #26c6da,
+    -24px 24px #43a047,
+    -28px 28px #eeff41,
+    -32px 32px #f9a825,
+    -36px 36px #ff5722;
+}
+
+#purpleBorder {
+  border-style: dashed;
+  border-color: #7a19d5;
+  border-width: 4px;
+  background-color: #ccaff2;
+}
+.inside {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+p {
+  color: #0b072c;
+}
+
+aside {
+  float: right;
+  margin: 0 5.5%;
+  width: 40%;
+}
