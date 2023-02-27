@@ -1,0 +1,15 @@
+body,html{
+    margin :0;
+    padding: 0;
+}
+.grid-container{
+    padding: 10px;
+    background-color: #d5e8f7;
+}
+.grid-item{
+    background-color: #519cd5;
+}
+.grid-item:nth-child(even)
+{
+    background-color: #74b9ee;
+}
