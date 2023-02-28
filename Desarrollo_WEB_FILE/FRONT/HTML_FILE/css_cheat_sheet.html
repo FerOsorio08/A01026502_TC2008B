@@ -128,8 +128,10 @@
     <div>
         <h2 class="pinkBack"> Width, Height</h2>
         <p>
-            En <i>css</i> <b> width y height </b> son propiedades que se usan para determinar el largo y ancho de un objeto.
-            Estas propiedades no incluyen los marcos ni los bordes; se puede usar <b>max-width</b> para seleccionar el tamaño
+            En <i>css</i> <b> width y height </b> son propiedades que se usan para determinar el largo y ancho de un
+            objeto.
+            Estas propiedades no incluyen los marcos ni los bordes; se puede usar <b>max-width</b> para seleccionar el
+            tamaño
             maximo de un objeto.<br>
             Estas propiedades pueden tener los siguientes valores: auto, length, % (porcentaje), initial, inherit.
             <br> Un ejemplo de esto es el aside de <i>font-style</i>.
@@ -138,7 +140,7 @@
         <h2 class="pinkBack"> List - style</h2>
         <p>
             <b>List style</b> en css permite seleccionar todas las propiedades de una lista a la vez.
-            Se puede configurar : list-style-image,  list-style-position y list style type.
+            Se puede configurar : list-style-image, list-style-position y list style type.
         </p>
         <ul role="list">
             <li>cosa uno</li>
@@ -162,7 +164,8 @@
     <div>
         <h2 class="redBack">Padding</h2>
         <p>
-            La propiedad <b>padding</b> en css permite determinar la padding area de cualquier elemento en sus 4 lados a la vez.
+            La propiedad <b>padding</b> en css permite determinar la padding area de cualquier elemento en sus 4 lados a
+            la vez.
             Tienen las siguientes propiedades: padding-top, padding-right, padding-bottom, padding-left.
         </p>
         <p id="lotpadding">
@@ -176,22 +179,24 @@
     <div>
         <h2 class="redBack">Overflow</h2>
         <p>
-            El modulo <b>overflow</b> en <i>css</i> permite que haya texto desbordado y que este se pueda escoder o verse 
+            El modulo <b>overflow</b> en <i>css</i> permite que haya texto desbordado y que este se pueda escoder o
+            verse
             mas abajo. En css el desbordado sucede cuando la caja de texto no puede contener el contenido completo.
-            Existen dos tipos: ink overflow y scroll overflow, en el primero no afecta el layout y el segundo permite la opción 
+            Existen dos tipos: ink overflow y scroll overflow, en el primero no afecta el layout y el segundo permite la
+            opción
             de hacer scroll en el texto.
-            <p id="overflow">
-                Este texto debe de tener las propiedades de overflow.
-                 "You can use the overflow property when you want to have better control of the layout. 
-                The overflow property specifies what happens if content overflows an element's box.""
-            </p>
+        <p id="overflow">
+            Este texto debe de tener las propiedades de overflow.
+            "You can use the overflow property when you want to have better control of the layout.
+            The overflow property specifies what happens if content overflows an element's box.""
+        </p>
         </p>
     </div>
 
     <div id="display">
         <h2 class="redBack">Display</h2>
         <p id="diplay">
-            <b>Display</b> es un modulo en css que define como se genera el formato y define las propiedades 
+            <b>Display</b> es un modulo en css que define como se genera el formato y define las propiedades
             que lo controlan
             Este parrafo esta dentro de un display:block
             <br>
@@ -199,9 +204,39 @@
         </p>
     </div>
 
-    <div>
+    <div class="relative">
         <h2 class="orangeBack">Position</h2>
+        <p>
+            La propiedad <b>positon</b> especifica el tipo de método de posición que usa un elemento.
+            <br> hay 5 diferentes tipos de posición:
+        </p>
+        <div class="absolute">
+            <ol>
+                <li> static</li>
+                <li> relative</li>
+                <li> fixed</li>
+                <li> absolute</li>
+                <li> sticky</li>
+            </ol>
+        </div>
+        <p>
+            Este es un ejemplo usando posiciones relativas y absolutas.
+        </p>
+    </div>
 
+    <div>
+        <h2 class="orangeBack">Filter</h2>
+        <p>
+            La propiedad <b>filter</b> aplica efectos gráficos como <i>blur y contrast</i> a elementos.
+            Esto es un ejemplo usando blur:
+        </p>
+        <img id="blur" src="https://i.pinimg.com/564x/6f/b2/62/6fb262a622a97a5e4861f51bc6e1efda.jpg"
+            alt="different font families" width="200" height="350">
+        <aside>
+            <p> Este es un ejemplo usando contrast:</p>
+            <img id="contrast" src="https://i.pinimg.com/564x/4b/d9/da/4bd9da4ce856fc1c5640e2d9f28ed540.jpg"
+                alt="red color values" width="400" height="350">
+        </aside>
     </div>
 
 </body>
