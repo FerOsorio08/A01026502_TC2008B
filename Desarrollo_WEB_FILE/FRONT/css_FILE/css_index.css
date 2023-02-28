@@ -1,0 +1,18 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  }
+  a:link,
+  a:visited {
+    color: #ee80e1;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    background-color: #e72ec5;
+  }
+  h1.pinkBack {
+    color: #d42fbe;
+    background-color: #f7d5f5;
+  }
