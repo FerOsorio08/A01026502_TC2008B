@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body{
+    margin: 00;
+    padding: 0;
+    background-color: #ffffff;
+}
+.grid-container {
+    padding: 0px;
+    height: 100vh;
+    /* view port */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 35% 10% 25% 5%;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* gap: 10px; */
+    /* grid-template-areas: 
+        "header header header"
+        ".  content ."
+        ".  content ."
+        ".  content .";
+        /* para definir donde queremos que se considere una columna o no */
+}
+.grid-item-1{
+    background-color: #1c273b;
+    /* padding: 10px; */
+    /* margin: 5px; */
+    grid-column: 1 / -1;
+    grid-row: 1;
+    color: #ffffff;
+}
+.flex-container-1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 100%;
+    
+}
+.flex-item-1{
+    display:flex;
+    margin: 5%;
+    flex-shrink: 1;
+    /* por defecto siempre dice 1 */
+    flex-grow: 2; 
+    justify-content: left;
+    align-content: flex-start;
+    
+}
+.grid-item-2
+{
+    background-color: #8e6416;
+    /* padding: 10px; */
+    /* margin: 5px; */
+    grid-column: 1 / -1;
+    grid-row: 2 /span 3;
+    color: #ffffff;
+}
+.flex-container-2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content:center;
+    height: 100%;
+}
+.flex-item-2{
+    margin: 20%;
+    flex-shrink: 1;
+    /* por defecto siempre dice 1 */
+    flex-grow: 8; 
+    justify-content: center;
+    text-align: center;
+}
