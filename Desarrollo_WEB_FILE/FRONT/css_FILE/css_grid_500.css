@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body{
+    margin: 10;
+    padding: 0;
+    background-color: #f4ddef;
+}
+
+div{
+    border: 2px #801a6d solid 
+}
+
+.flex-item{
+    margin: 5%;
+}
