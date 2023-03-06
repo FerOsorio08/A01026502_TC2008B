@@ -17,7 +17,7 @@ html,body{
 
 }
 .grid-item-1{
-    background-color: #1c273b;
+    background-color: #1c2f3b;
     /* padding: 10px; */
     /* margin: 5px; */
     grid-column: 1 / -1;
@@ -37,7 +37,7 @@ html,body{
 
 .grid-item-3
 {
-    background-color: #1c273b;
+    background-color: #1c2f3b;
     /* padding: 10px; */
     /* margin: 5px; */
     grid-column: 1 / -1;
@@ -55,7 +55,7 @@ html,body{
 }
 .grid-item-5
 {
-    background-color: #1c273b;
+    background-color: #1c2f3b;
     /* padding: 10px; */
     /* margin: 5px; */
     grid-column: 1 / -1;
@@ -164,7 +164,6 @@ html,body{
     text-align: center ;
     padding: 20px;
     margin: 10px;
-    height:80%;
     justify-content: center;
 }
 .middle-content{
@@ -189,4 +188,82 @@ html,body{
   cursor: pointer;
   border-radius: 5px;
   height: 60%;
+}
+
+
+/* LANGUAGES */
+.flex-languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    height: 100%;
+}
+.languages{
+    display: flex; 
+    flex-wrap: wrap;
+    
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.languages-item{
+    display: flex; 
+    flex-wrap: wrap;
+    flex: column wrap;
+    /* align-content: flex-start; */
+    color: #000000;
+    padding: auto;
+    margin: auto;
+    justify-content:space-between; 
+    text-align: center;
+    width:auto;
+}
+.languages-content{
+    display: flex; 
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    align-items: center;
+    color: #000000;
+    align-content: center;
+    justify-content: center;
+    text-align: center ;
+    padding: 10px;
+    margin: auto;
+    width: 33%;
+    font-size: small;
+}
+
+/* FOOTER */
+.flex-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+}
+.footer{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    color: #ffffff;
+    padding: auto;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.footer-item{
+    display: flex; 
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    color: #ffffff;
+    padding: auto;
+    margin: auto;
+    justify-content:space-between; 
+    text-align: center;
+    width:auto;
+    font-size: smaller;
 }
