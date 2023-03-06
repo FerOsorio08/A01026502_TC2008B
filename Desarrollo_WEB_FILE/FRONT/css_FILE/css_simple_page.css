@@ -201,14 +201,16 @@ html,body{
 }
 .languages{
     display: flex; 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     
     align-items: center;
     color: #ffffff;
     padding: 20px;
     margin: auto;
     justify-content: space-evenly;
-    width: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: row; */
 }
 .languages-item{
     display: flex; 
@@ -221,6 +223,9 @@ html,body{
     justify-content:space-between; 
     text-align: center;
     width:auto;
+    font-size: small;
+    flex-direction: column;
+    height: auto;
 }
 .languages-content{
     display: flex; 
@@ -233,8 +238,9 @@ html,body{
     text-align: center ;
     padding: 10px;
     margin: auto;
-    width: 33%;
     font-size: small;
+    flex-direction: column;
+    height: auto; 
 }
 
 /* FOOTER */
