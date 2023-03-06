@@ -1,12 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-html,body{
+
+html,
+body {
     margin: 00;
     padding: 0;
     background-color: #ffffff;
 }
+
 .grid-container {
     padding: 0px;
     height: 100vh;
@@ -16,7 +19,8 @@ html,body{
     grid-template-rows: 10% 50% 10% 25% 5%;
 
 }
-.grid-item-1{
+
+.grid-item-1 {
     background-color: #1c2f3b;
     /* padding: 10px; */
     /* margin: 5px; */
@@ -24,19 +28,18 @@ html,body{
     grid-row: 1;
     color: #ffffff;
 }
+
 /* ////////////////// */
-.grid-item-2
-{
+.grid-item-2 {
     background-color: #8e6416;
     /* padding: 10px; */
     /* margin: 5px; */
     grid-column: 1 / -1;
-    grid-row: 2 ;
+    grid-row: 2;
     color: #ffffff;
 }
 
-.grid-item-3
-{
+.grid-item-3 {
     background-color: #1c2f3b;
     /* padding: 10px; */
     /* margin: 5px; */
@@ -44,8 +47,8 @@ html,body{
     grid-row: 3;
     color: #ffffff;
 }
-.grid-item-4
-{
+
+.grid-item-4 {
     background-color: #ffffff;
     /* padding: 10px; */
     /* margin: 5px; */
@@ -53,8 +56,8 @@ html,body{
     grid-row: 4;
     color: #ffffff;
 }
-.grid-item-5
-{
+
+.grid-item-5 {
     background-color: #1c2f3b;
     /* padding: 10px; */
     /* margin: 5px; */
@@ -65,43 +68,46 @@ html,body{
 
 
 /* HEADER */
-.flex-header{
+.flex-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
     height: 100%;
 }
-.simple{
-    display: flex; 
+
+.simple {
+    display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     height: 100%;
     color: #ffffff;
-    text-align: bottom ;
+    text-align: bottom;
     padding: 10px;
     margin: 10px;
-    height:80%;
+    height: 80%;
 }
-.about{
-    display: flex; 
+
+.about {
+    display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     height: 100%;
     color: #ffffff;
-    text-align: bottom ;
+    text-align: bottom;
     padding: 20px;
     margin: 10px;
     height: auto;
     font-size: small;
 }
-.about-content{
-    display: flex; 
+
+.about-content {
+    display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     height: 100%;
     color: #ffffff;
-    text-align: bottom ;
+    text-align: bottom;
     padding: 10px;
     margin: 10px;
     height: auto;
@@ -109,38 +115,39 @@ html,body{
 }
 
 /* BODY */
-.flex-body{
+.flex-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
     height: 100%;
 }
-.development{
-    display: flex; 
+
+.development {
+    display: flex;
     flex-wrap: wrap;
     /* align-content: flex-start; */
     align-items: center;
-    width: 100%; 
+    width: 100%;
     color: #ffffff;
     align-content: center;
     justify-content: center;
-    text-align: center ;
+    text-align: center;
     padding: 10px;
     margin: 10px;
-    height:95%;
+    height: 95%;
 }
 
-.development-content{
-    display: flex; 
+.development-content {
+    display: flex;
     flex-wrap: wrap;
     /* align-content: flex-start; */
     align-items: center;
-    width: 70%; 
+    width: 70%;
     color: #ffffff;
     align-content: center;
     justify-content: center;
-    text-align: center ;
+    text-align: center;
     padding: 10px;
     margin: 10px;
     height: auto;
@@ -148,59 +155,63 @@ html,body{
 }
 
 /* MIDDLE */
-.flex-middle{
+.flex-middle {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
     height: 100%;
 }
-.middle{
-    display: flex; 
+
+.middle {
+    display: flex;
     flex-wrap: wrap;
     /* align-content: flex-start; */
     align-items: center;
     color: #ffffff;
-    text-align: center ;
+    text-align: center;
     padding: 20px;
     margin: 10px;
     justify-content: center;
 }
-.middle-content{
-    display: flex; 
+
+.middle-content {
+    display: flex;
     flex-wrap: wrap;
     /* align-content: flex-start; */
     color: #ffffff;
     padding: auto;
     margin: auto;
-    justify-content:space-between; 
+    justify-content: space-between;
     font-size: small;
 }
+
 .subscribe-btn {
-  background-color: #8e6416;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  height: 60%;
+    background-color: #8e6416;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 60%;
 }
 
 
 /* LANGUAGES */
-.flex-languages{
+.flex-languages {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: flex-start;
     height: 100%;
 }
-.languages{
-    display: flex; 
+
+.languages {
+    display: flex;
     /* flex-wrap: wrap;
     
     align-items: center;
@@ -212,47 +223,50 @@ html,body{
     height: auto;
     flex-direction: row; */
 }
-.languages-item{
-    display: flex; 
+
+.languages-item {
+    display: flex;
     flex-wrap: wrap;
     flex: column wrap;
     /* align-content: flex-start; */
     color: #000000;
     padding: auto;
     margin: auto;
-    justify-content:space-between; 
+    justify-content: space-between;
     text-align: center;
-    width:auto;
+    width: auto;
     font-size: small;
     flex-direction: column;
     height: auto;
 }
-.languages-content{
-    display: flex; 
+
+.languages-content {
+    display: flex;
     flex-wrap: wrap;
     /* align-content: flex-start; */
     align-items: center;
     color: #000000;
     align-content: center;
     justify-content: center;
-    text-align: center ;
+    text-align: center;
     padding: 10px;
     margin: auto;
     font-size: small;
     flex-direction: column;
-    height: auto; 
+    height: auto;
 }
 
 /* FOOTER */
-.flex-footer{
+.flex-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     height: 100%;
 }
-.footer{
-    display: flex; 
+
+.footer {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     color: #ffffff;
@@ -261,15 +275,16 @@ html,body{
     justify-content: space-evenly;
     width: 100%;
 }
-.footer-item{
-    display: flex; 
+
+.footer-item {
+    display: flex;
     flex-wrap: wrap;
     /* align-content: flex-start; */
     color: #ffffff;
     padding: auto;
     margin: auto;
-    justify-content:space-between; 
+    justify-content: space-between;
     text-align: center;
-    width:auto;
+    width: auto;
     font-size: smaller;
 }
