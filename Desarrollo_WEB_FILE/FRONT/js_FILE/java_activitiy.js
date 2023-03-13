@@ -20,7 +20,6 @@ function NoRepeat(str) {
       return str[i];
     }
   }
-
   // if there are no non-repeating characters, return null
   console.log(frequency);
   return null;
@@ -99,9 +98,8 @@ const sortedArray = sortStrings(unsortedArray);
 console.log(sortedArray);
 
 //13.Escribe una función que tome una lista de cadenas de texto y devuelva la cadena más frecuente.
-
 function mostFrequentString(list) {
-  const stringFrequency = {};
+  let stringFrequency = {};
   let maxFrequency = 0;
   let mostFrequent;
 
@@ -109,9 +107,11 @@ function mostFrequentString(list) {
     // If the string doesn't exist yet, add it with a frequency of 1
     if (!stringFrequency[str]) {
       stringFrequency[str] = 1;
+      console.log(stringFrequency[str]);
     } else {
       // Otherwise, increment its frequency
       stringFrequency[str]++;
+      console.log(stringFrequency[str]);
     }
 
     // Check if it's the most frequent string so far
@@ -127,4 +127,3 @@ function mostFrequentString(list) {
 const stringList = ['emo', 'emo', 'fer', 'fer', 'lu', 'lu', 'lu'];
 const frequentString = mostFrequentString(stringList);
 console.log(frequentString);
-// Output: 'apple'
