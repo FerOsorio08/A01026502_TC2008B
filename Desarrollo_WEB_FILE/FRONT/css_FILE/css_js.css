@@ -1,0 +1,21 @@
+body {
+    font-family: 'secondFont','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    background-color:#addefc;
+    color: #1a3580;
+
+  }
+
+#header {
+    background-color:#1a4a80;
+    color:white;
+    text-align:center;
+    padding:5px;
+    font-family: 'myFirstFont';
+  }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts_FILE/Mahgin.otf);
+    font-family: secondFont;
+    src: url(../fonts_FILE/TT\ Marxiana\ Trial\ Grotesque.ttf);
+}
