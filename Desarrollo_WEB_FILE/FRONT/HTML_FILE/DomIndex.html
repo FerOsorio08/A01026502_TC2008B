@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
-    <script type="module" src="../js/eventos_dom.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css_FILE/eventos_dom.css">
+    <script type="module" src="../js_FILE/domact.js"></script>
     <title>Eventos y Dom</title>
 </head>
 
@@ -27,31 +27,174 @@
         <h3>Preguntas</h3>
         <ol>
             <li>¿Qué es el DOM?</li>
-            <section> 
-                <h4>Copilot: </h4>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
                 <p>
-                El DOM es un modelo de objetos de documento,
-                el modelo de objetos de documento es una interfaz de programación para documentos HTML y XML.
+                    El DOM es un modelo de objetos de documento,
+                    el modelo de objetos de documento es una interfaz de programación para documentos HTML y XML.
                 </p>
-                <h4>ChatGPT: </h4>
+                <h4 id="gpt">ChatGPT: </h4>
                 <p>
-                El DOM (acrónimo en inglés de Document Object Model) es una interfaz de programación para documentos
-                HTML y XML. El DOM representa una estructura jerárquica de nodos que describe la estructura del
-                documento y su contenido. Cada elemento en el documento es un nodo en el árbol del DOM, y cada nodo
-                puede tener un conjunto de atributos y un conjunto de nodos hijos.
-                <br>
-                El DOM permite a los desarrolladores acceder y manipular los elementos de un documento HTML o XML
-                utilizando un lenguaje de programación como JavaScript. Por ejemplo, los desarrolladores pueden utilizar
-                el DOM para agregar, eliminar o modificar elementos y atributos en una página web en tiempo real.
+                    El DOM (acrónimo en inglés de Document Object Model) es una interfaz de programación para documentos
+                    HTML y XML. El DOM representa una estructura jerárquica de nodos que describe la estructura del
+                    documento y su contenido. Cada elemento en el documento es un nodo en el árbol del DOM, y cada nodo
+                    puede tener un conjunto de atributos y un conjunto de nodos hijos.
+                    <br>
+                    El DOM permite a los desarrolladores acceder y manipular los elementos de un documento HTML o XML
+                    utilizando un lenguaje de programación como JavaScript. Por ejemplo, los desarrolladores pueden
+                    utilizar
+                    el DOM para agregar, eliminar o modificar elementos y atributos en una página web en tiempo real.
 
-                En resumen, el DOM es una herramienta esencial para cualquier desarrollador web que necesite manipular
-                documentos HTML o XML dinámicamente.
+                    En resumen, el DOM es una herramienta esencial para cualquier desarrollador web que necesite
+                    manipular
+                    documentos HTML o XML dinámicamente.
                 </p>
-                <b>Correcto:</b>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    El modelo de objeto de documento (DOM) es una interfaz de programación para HTML. Traduce el
+                    contenido de un documento HTML a un objeto estandarizado, al que los lenguajes de programación
+                    funcionales como JavaScript tienen facilidad de acceso y modificación. Debido a que la mayoría de
+                    los eventos de páginas web son impulsados por código que no es HTML, todas las páginas web dinámicas
+                    dependen del DOM para visualizarse y funcionar correctamente
+                    <br>
+                    <a href="https://blog.hubspot.es/website/que-es-dom" target="_blank">Fuente</a>
+                </p>
             </section>
+
             <li>¿Qué es un nodo?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Un nodo es un objeto que representa un elemento en el documento HTML.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    En informática, un nodo es un punto de conexión en una red. Puede referirse a cualquier dispositivo
+                    conectado a una red, como una computadora, un enrutador, un switch, un servidor, etc. En términos
+                    más simples, un nodo es cualquier dispositivo que pueda enviar, recibir o reenviar datos dentro de
+                    una red.
+
+                    En una red de computadoras, los nodos pueden estar conectados mediante cables físicos o inalámbricos
+                    y se utilizan para compartir recursos, como archivos, impresoras, bases de datos y acceso a
+                    Internet. Los nodos también pueden actuar como servidores y proporcionar servicios a otros
+                    dispositivos conectados en la red.
+
+                    En resumen, un nodo es un punto de conexión en una red que puede enviar, recibir o reenviar datos y
+                    recursos.
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    Nodes are tools used in data structures which contain certain information and connect it with
+                    another number of devices or computers so that they all have access to this information. The nodes
+                    have a pointer which serves to refer to another node and if one of these has at least one more
+                    pointer then structures with a higher complexity are created which are called Graphs.
+                    <br>
+                    <a href="https://seguidores.online/en/nodos-de-red/" target="_blank">Fuente</a>
+                </p>
+            </section>
+
             <li>¿Cómo se accede a un elemento del DOM?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Para acceder a un elemento del DOM, se utiliza el método getElementById.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    Para acceder a un elemento del DOM (Document Object Model), puedes utilizar el método
+                    querySelector() o getElementById() del objeto document en JavaScript.
+
+                    Utilizando querySelector(): Este método te permite buscar un elemento en el DOM utilizando un
+                    selector CSS.
+                    Ejemplo:
+
+                    Supongamos que tienes un elemento en el DOM con un ID "mi-elemento" y quieres acceder a él.
+                    <br>
+                    <i>const miElemento = document.querySelector("#mi-elemento");</i>
+                    <br>
+                    Utilizando getElementById(): Este método te permite buscar un elemento en el DOM utilizando su ID.
+                    Ejemplo:
+
+                    Supongamos que tienes un elemento en el DOM con un ID "mi-elemento" y quieres acceder a él.
+
+                    <br>
+                    <i>const miElemento = document.getElementById("mi-elemento");</i>
+                    <br>
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    Acceder al DOM con el objeto document
+                    Cuando un programa JavaScript, se ejecuta en el contexto de un navegador, se puede acceder al DOM
+                    utilizando el objeto "document", corresponde al elemento <html> , con lo que se tendrá acceso a
+                    todos los nodos hijos de la página, como
+
+                    head o
+
+                    body y sus descendientes.
+                    <br>
+                    <a href="https://www.um.es/docencia/barzana/DAWEB/2017-18/daweb-tema-20-js.html#:~:text=Acceder%20al%20DOM%20con%20el,y%20sus%20descendientes."
+                        target="_blank">Fuente</a>
+                </p>
+            </section>
+
             <li>¿Cómo se modifica un elemento del DOM?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Para modificar un elemento del DOM, se utiliza el método innerHTML.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    Para modificar un elemento del DOM (Document Object Model) utilizando JavaScript, puedes acceder al
+                    elemento utilizando métodos como querySelector() o getElementById() y luego manipular sus
+                    propiedades o atributos.
+
+                    Por ejemplo, supongamos que tienes un elemento de párrafo con un ID "mi-párrafo" en tu documento
+                    HTML y deseas cambiar su contenido de texto. Puedes hacerlo utilizando la propiedad textContent del
+                    objeto:
+                    <br>
+                    <i>
+                        const miParrafo = document.getElementById("mi-párrafo");
+                        <br>miParrafo.textContent = "Este es mi nuevo contenido de texto.";
+                    </i>
+                    <br><br>
+                    También puedes modificar los atributos de un elemento, como su clase, ID, valor, etc., utilizando la
+                    propiedad setAttribute() del objeto:
+                    <br>
+                    <i>
+                        const miElemento = document.querySelector("#mi-elemento");
+                        <br>miElemento.setAttribute("class", "mi-nueva-clase");
+                        <br>miElemento.setAttribute("id", "mi-nuevo-id");
+                        <br>miElemento.setAttribute("value", "mi-nuevo-valor");
+                    </i>
+                    <br><br>
+                    También puedes agregar o eliminar clases de un elemento utilizando la propiedad classList del
+                    objeto:
+                    <i>
+                        const miElemento = document.querySelector("#mi-elemento");
+                        <br>miElemento.classList.add("mi-nueva-clase"); // Agregar clase
+                        <br>miElemento.classList.remove("mi-clase-antigua"); // Eliminar clase
+                        <br>miElemento.classList.toggle("mi-clase-activa"); // Alternar clase (agrega si no existe,
+                        elimina
+                        si existe)
+                    </i>
+                    <br><br>
+                    Además de modificar el contenido y los atributos de un elemento, también puedes crear nuevos
+                    elementos y agregarlos al DOM. Por ejemplo, para crear un nuevo elemento de párrafo y agregarlo al
+                    cuerpo del documento, puedes hacer lo siguiente:
+                    <i>
+                        <br>const nuevoParrafo = document.createElement("p");
+                        <br>nuevoParrafo.textContent = "Este es un nuevo párrafo agregado mediante JavaScript.";
+                        <br>document.body.appendChild(nuevoParrafo);
+
+                    </i><br>
+                    En resumen, hay muchas formas de modificar elementos en el DOM utilizando JavaScript, desde la manipulación de propiedades y atributos hasta la creación de nuevos elementos.
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    Para modificar un elemento del DOM, se utiliza el método innerHTML.
+                </p>
+            </section>
             <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
             <li>¿Qué es un evento?</li>
             <li>¿Qué es un listener?</li>

@@ -3,10 +3,40 @@
 
 }
 
+
 .container{
     padding: 10px;
     border-bottom: 1px solid black;
 }
+
+#copilot{
+    background-color: #addefc;
+    color: #1a3580;
+    font-family: Verdana;
+}
+#gpt{
+    background-color: #adfcce;
+    color: #1a8065;
+    font-family:Verdana;
+}
+#correcto{
+    background-color: #f9adfc;
+    color: #801a63;
+    font-family:Verdana;
+}
+
+a:link,
+  a:visited {
+    color: #801a63;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    background-color: #f56ba5;
+  }
+
 
 table, td{
     border: 1px solid black;
@@ -14,7 +44,7 @@ table, td{
 
 @font-face {
     font-family: myFirstFont;
-    src: url(../fonts_FILE/Mahgin.otf);
+    src: url(../fonts_FILE/Food\ Zone.ttf);
     font-family: secondFont;
-    src: url(../Desarrollo_WEB_FILE/FRONT/fonts_FILE/TT\ Marxiana\ Trial\ Grotesque.ttf);
+    src: url(../fonts_FILE/TT\ Marxiana\ Trial\ Grotesque.ttf);
 }
