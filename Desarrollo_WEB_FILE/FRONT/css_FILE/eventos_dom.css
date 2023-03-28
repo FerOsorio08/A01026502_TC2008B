@@ -1,5 +1,6 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'secondFont','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+
 }
 
 .container{
@@ -9,4 +10,11 @@
 
 table, td{
     border: 1px solid black;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts_FILE/Mahgin.otf);
+    font-family: secondFont;
+    src: url(../Desarrollo_WEB_FILE/FRONT/fonts_FILE/TT\ Marxiana\ Trial\ Grotesque.ttf);
 }

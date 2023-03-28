@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
@@ -12,15 +13,42 @@
 
     <div class="container">
         <h2>Instrucciones</h2>
-        <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios, contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas las ponga directamente en elementos de html.)</p>
+        <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios,
+            contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado
+            es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo
+            que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas
+            las ponga directamente en elementos de html.)</p>
 
-        <p>Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la sección de conclusiones. </p>
+        <p>Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la sección de
+            conclusiones. </p>
     </div>
 
     <div class="container">
         <h3>Preguntas</h3>
         <ol>
             <li>¿Qué es el DOM?</li>
+            <section> 
+                <h4>Copilot: </h4>
+                <p>
+                El DOM es un modelo de objetos de documento,
+                el modelo de objetos de documento es una interfaz de programación para documentos HTML y XML.
+                </p>
+                <h4>ChatGPT: </h4>
+                <p>
+                El DOM (acrónimo en inglés de Document Object Model) es una interfaz de programación para documentos
+                HTML y XML. El DOM representa una estructura jerárquica de nodos que describe la estructura del
+                documento y su contenido. Cada elemento en el documento es un nodo en el árbol del DOM, y cada nodo
+                puede tener un conjunto de atributos y un conjunto de nodos hijos.
+                <br>
+                El DOM permite a los desarrolladores acceder y manipular los elementos de un documento HTML o XML
+                utilizando un lenguaje de programación como JavaScript. Por ejemplo, los desarrolladores pueden utilizar
+                el DOM para agregar, eliminar o modificar elementos y atributos en una página web en tiempo real.
+
+                En resumen, el DOM es una herramienta esencial para cualquier desarrollador web que necesite manipular
+                documentos HTML o XML dinámicamente.
+                </p>
+                <b>Correcto:</b>
+            </section>
             <li>¿Qué es un nodo?</li>
             <li>¿Cómo se accede a un elemento del DOM?</li>
             <li>¿Cómo se modifica un elemento del DOM?</li>
@@ -29,11 +57,12 @@
             <li>¿Qué es un listener?</li>
             <li>¿Qué es un callback?</li>
             <li>¿Qué es un objeto de evento?</li>
-        </ol>        
+        </ol>
     </div>
 
     <h3>Ejercicios de código</h3>
-    <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
+    <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te
+        genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
 
     <div class="container">
         <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
@@ -41,16 +70,18 @@
     </div>
 
     <div class="container">
-        <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega, después del botón, un elemento que tenga el nombre completo.</p>
+        <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega,
+            después del botón, un elemento que tenga el nombre completo.</p>
         <form id="form1">
-            First name: <input id="form-fname" type="text" name="fname" ><br>
-            Last name: <input id="form-lname" type="text" name="lname" ><br><br>
-        <input id="form1-submit" type="submit" value="Submit">
+            First name: <input id="form-fname" type="text" name="fname"><br>
+            Last name: <input id="form-lname" type="text" name="lname"><br><br>
+            <input id="form1-submit" type="submit" value="Submit">
         </form>
     </div>
 
     <div class="container">
-        <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón correspondiente.</p>
+        <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón
+            correspondiente.</p>
         <table id="sampleTable">
             <tr>
                 <td>Row 1 column 1</td>
@@ -66,7 +97,9 @@
     </div>
 
     <div class="container">
-        <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la posición que solicitaste, con la cadena de texto que solicitaste.</p>
+        <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente
+            tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la
+            posición que solicitaste, con la cadena de texto que solicitaste.</p>
         <table id="myTable">
             <tr>
                 <td>Row1 cell1</td>
@@ -83,7 +116,8 @@
                 <td>Row3 cell2</td>
                 <td>Row3 cell3</td>
             </tr>
-            </table><form><br>
+        </table>
+        <form><br>
             <input id="rowIndex" type="text" placeholder="Row Index">
             <input id="colIndex" type="text" placeholder="Col Index">
             <input id="newValue" type="text" placeholder="New Value">
@@ -91,7 +125,8 @@
     </div>
 
     <div class="container">
-        <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
+        <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser
+            aleatorios.</p>
         <form>
             <select id="colorSelect">
                 <option>Red</option>
@@ -105,7 +140,9 @@
     </div>
 
     <div class="container">
-        <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
+        <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el
+            width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que
+            generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
         <img id="imagenGato" src="http://placekitten.com/200/300">
     </div>
 
@@ -119,4 +156,5 @@
     </div>
 
 </body>
+
 </html>
