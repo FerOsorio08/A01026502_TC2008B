@@ -41,10 +41,24 @@ a:link,
 table, td{
     border: 1px solid black;
 }
+li{
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+h2{
+    font-size: 2rem;
+    background-color: #dadddf;
+    font-family: 'nooks';
+}
 
 @font-face {
     font-family: myFirstFont;
     src: url(../fonts_FILE/Food\ Zone.ttf);
     font-family: secondFont;
     src: url(../fonts_FILE/TT\ Marxiana\ Trial\ Grotesque.ttf);
+    font-family: nooks;
+    src: url(../fonts_FILE/TT\ Nooks\ Script\ Trial\ Bold.otf);
+    font-family: knickerbocker;
+    src: url(../fonts_FILE/TT\ Knickerbockers\ Script\ Trial.otf);
 }

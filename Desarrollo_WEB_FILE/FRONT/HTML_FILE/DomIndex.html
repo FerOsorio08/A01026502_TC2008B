@@ -24,7 +24,7 @@
     </div>
 
     <div class="container">
-        <h3>Preguntas</h3>
+        <h2>Preguntas</h2>
         <ol>
             <li>¿Qué es el DOM?</li>
             <section>
@@ -188,27 +188,204 @@
                         <br>document.body.appendChild(nuevoParrafo);
 
                     </i><br>
-                    En resumen, hay muchas formas de modificar elementos en el DOM utilizando JavaScript, desde la manipulación de propiedades y atributos hasta la creación de nuevos elementos.
+                    En resumen, hay muchas formas de modificar elementos en el DOM utilizando JavaScript, desde la
+                    manipulación de propiedades y atributos hasta la creación de nuevos elementos.
                 </p>
                 <h4 id="correcto">Correcto: </h4>
                 <p>
-                    Para modificar un elemento del DOM, se utiliza el método innerHTML.
+                    Existen diferentes maneras de modificar un elemento del DOM. Se pueden modificar atributos
+                    (setAttribute, removeAttribute), estilos,
+                    nombres de clases, modificar el HTML interno o el texto. Así mismo se pueden crear elementos desde
+                    cero.
+                    <br>
+                    <a href="https://es.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-modification/a/summary-dom-modification-techniques"
+                        target="_blank">Fuente</a>
                 </p>
             </section>
+
             <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    La diferencia entre getElementby* y querySelector* es que getElementby* busca un elemento por su
+                    ID, mientras que querySelector* busca un elemento por su clase.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    Tanto getElementById() como querySelector() son métodos en JavaScript que se utilizan para acceder a
+                    elementos del DOM (Document Object Model), pero tienen algunas diferencias importantes en cuanto a
+                    su funcionalidad.
+
+                    getElementById() es un método más antiguo que solo puede acceder a elementos por su ID en el
+                    documento HTML. Recibe como argumento una cadena que contiene el valor del ID del elemento que
+                    deseas acceder y devuelve el primer elemento con ese ID.
+                    Por otro lado, querySelector() es un método más moderno que se puede utilizar para acceder a
+                    elementos utilizando cualquier selector CSS válido, como un ID, una clase o un tipo de elemento.
+                    Puede tomar cualquier selector CSS válido como argumento y devuelve el primer elemento que coincide
+                    con ese selector.
+
+                    Una de las principales ventajas de querySelector() es que puede realizar búsquedas más complejas que
+                    getElementById(), lo que permite seleccionar elementos por otros atributos además de ID, como
+                    clases, tipos de elementos, atributos de datos, entre otros. Además, querySelector() también es
+                    compatible con navegadores más antiguos, lo que lo hace más útil en algunos casos.
+
+                    Es importante tener en cuenta que querySelector() y getElementById() solo devuelven el primer
+                    elemento que coincida con el selector o el ID especificado. Si necesitas acceder a varios elementos,
+                    deberás utilizar otro método, como querySelectorAll().
+
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    QuerySelector: Selecciona el primer elemento que coincide con la consulta. getElementById:
+                    selecciona el primer elemento que contenga como id el valor indicado.
+                    <br>
+                    <a href=https://es.stackoverflow.com/questions/22538/diferencia-entre-queryselector-queryselectorall-getelementbyid-getelementbyta#:~:text=QuerySelector%3A%20Selecciona%20el%20primer%20elemento%20que%20coincide%20con%20la%20consulta.&text=getElementById%3A%20selecciona%20el%20primer%20elemento,como%20id%20el%20valor%20indicado."
+                        target="_blank">Fuente</a>
+                </p>
+            </section>
+
             <li>¿Qué es un evento?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Un evento es una acción que ocurre en el navegador, como un clic, un movimiento del mouse, un
+                    cambio en el tamaño de la ventana, etc. Los eventos se pueden capturar y manejar con JavaScript.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    En el contexto de la programación web, un evento es una acción o suceso que ocurre en un elemento de
+                    una página web y que puede ser detectado por el navegador y por JavaScript. Por ejemplo, cuando el
+                    usuario hace clic en un botón, desplaza la página, o ingresa texto en un campo de entrada, estos son
+                    ejemplos de eventos que pueden ser detectados por el navegador y por JavaScript.
+
+                    Los eventos son importantes en la programación web porque permiten crear interactividad y dinamismo
+                    en las páginas web. Por ejemplo, cuando un usuario hace clic en un botón, se puede utilizar
+                    JavaScript para realizar una acción específica, como enviar datos a un servidor o cambiar el
+                    contenido de la página.
+
+                    JavaScript permite asociar un controlador de eventos a un elemento en la página web utilizando el
+                    método addEventListener(). Este método permite especificar el tipo de evento que se está escuchando
+                    y la función que se debe llamar cuando ocurre ese evento. Por ejemplo, el siguiente código muestra
+                    cómo se puede utilizar addEventListener() para detectar el evento de clic en un botón y llamar a una
+                    función específica
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    Los eventos son las acciones que especificas en respuesta a los gestos de los usuarios, a los
+                    fotogramas clave de la línea de tiempo o a otros aspectos de un anuncio o un documento HTML.
+                    <br>
+                    <a href="https://support.google.com/webdesigner/answer/6399979?hl=es#:~:text=Los%20eventos%20son%20las%20acciones,anuncio%20o%20un%20documento%20HTML."
+                        target="_blank">Fuente</a>
+                </p>
+            </section>
+
             <li>¿Qué es un listener?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Un listener es un objeto que escucha los eventos de un elemento. Cuando el evento ocurre, el
+                    listener ejecuta una función.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    En la programación web, un "listener" (escucha en español) es un objeto que espera y detecta un
+                    evento específico en un elemento de la página web y ejecuta una función específica en respuesta a
+                    ese evento.
+
+                    Por ejemplo, si se desea hacer algo en respuesta a un evento de clic en un botón, se puede crear un
+                    listener que espere ese evento y llame a una función específica en respuesta. En JavaScript, esto se
+                    hace a menudo utilizando el método addEventListener(), que permite especificar el tipo de evento que
+                    se desea detectar y la función que se debe ejecutar en respuesta a ese evento.
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    Los Listeners (oyentes o escuchadores en español) se encargan de controlar los eventos, esperan a
+                    que el evento se produzca y realiza una serie de acciones. Según el evento, necesitaremos un
+                    Listener que lo controle.
+
+                    Cada Listener tiene una serie de métodos que debemos implementar obligatoriamente, aunque solo
+                    queramos usar uno solo de ellos.
+                    <br>
+                    <a href="https://www.discoduroderoer.es/eventos-y-listeners-en-java/" target="_blank">Fuente</a>
+                </p>
+            </section>
+
             <li>¿Qué es un callback?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Un callback es una función que se pasa como argumento a otra función. La función que recibe el
+                    callback se llama "función de retorno de llamada".
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    En programación, un "callback" (llamada de vuelta en español) es una función que se pasa como
+                    argumento a otra función y que se ejecuta después de que se complete cierta tarea. En otras
+                    palabras, la función de callback es "llamada de vuelta" después de que la función principal haya
+                    terminado de ejecutarse.
+
+                    Los callbacks son muy utilizados en JavaScript, especialmente en el manejo de eventos y en la
+                    programación asíncrona. Por ejemplo, cuando se utiliza el método addEventListener() para detectar un
+                    evento en un elemento HTML, el segundo argumento es una función de callback que se ejecuta cuando se
+                    produce el evento. Otro ejemplo común de uso de los callbacks es con las funciones de temporizador
+                    setTimeout() y setInterval(), donde el primer argumento es una función de callback que se ejecuta
+                    después de un cierto tiempo.
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    Un web callback (devolución de llamada web), también llamado un “callback request” (solicitud de
+                    devolución de llamada) en algunos sitios, es una interacción de llamada telefónica con un usuario de
+                    un sitio que puede llegar a convertirse en un cliente potencial o lead, ya sea mediante una llamada
+                    telefónica en tiempo real o diferida.
+
+                    Un web callback se inicia en un sitio web o una aplicación móvil. Las características de un web
+                    callback permiten que un visitante solicite una llamada telefónica a un representante de la empresa
+                    para obtener más información o respuestas a sus preguntas.
+                    <br>
+                    <a href="https://www.atinternet.com/es/glosario/web-callback/#:~:text=Un%20web%20callback%20(devoluci%C3%B3n%20de,una%20llamada%20telef%C3%B3nica%20en%20tiempo"
+                        target="_blank">Fuente</a>
+                </p>
+            </section>
+
             <li>¿Qué es un objeto de evento?</li>
+            <section>
+                <h4 id="copilot">Copilot: </h4>
+                <p>
+                    Un objeto de evento es un objeto que contiene información sobre un evento. Por ejemplo, cuando se
+                    produce un evento de clic en un botón, el objeto de evento contiene información sobre el botón y el
+                    lugar donde se produjo el clic.
+                </p>
+                <h4 id="gpt">ChatGPT: </h4>
+                <p>
+                    En programación web, un objeto de evento es un objeto que contiene información y métodos
+                    relacionados con un evento específico que ha ocurrido en un elemento HTML.
+
+                    Cuando se produce un evento, como hacer clic en un botón, escribir en un campo de entrada o mover el
+                    ratón, se crea un objeto de evento que contiene información sobre el evento, como el tipo de evento
+                    que se ha producido, la posición del puntero del ratón y los valores de los campos de entrada.
+                    También puede contener métodos para interactuar con el evento, como prevenir el comportamiento
+                    predeterminado o detener la propagación del evento.
+                </p>
+                <h4 id="correcto">Correcto: </h4>
+                <p>
+                    El objeto event es el mecanismo definido por los navegadores para proporcionar toda esa información.
+                    Se trata de un objeto que se crea automáticamente cuando se produce un evento y que se destruye de
+                    forma automática cuando se han ejecutado todas las funciones asignadas al evento.
+                    <br>
+                    <a href="https://www.google.com/search?q=%C2%BFQu%C3%A9+es+un+objeto+de+evento?&sxsrf=APwXEdc4ry488f6bikKQI8dpIMoOkXsj2w:1680113171500&ei=E34kZP7zHc-oqtsP8LmH0Ac&ved=0ahUKEwi-yZOm3YH-AhVPlGoFHfDcAXoQ4dUDCA8&uact=5&oq=%C2%BFQu%C3%A9+es+un+objeto+de+evento?&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeOgoIABBHENYEELADSgQIQRgAUJUJWJUJYMMOaARwAXgAgAHVAYgB1QGSAQMyLTGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz-serp"
+                        target="_blank">Fuente</a>
+                </p>
+            </section>
+
         </ol>
     </div>
 
-    <h3>Ejercicios de código</h3>
+    <h2>Ejercicios de código</h2>
     <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te
         genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
 
     <div class="container">
         <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
+        
         <p id="mousePosition">Posición del mouse: </p>
     </div>
 
