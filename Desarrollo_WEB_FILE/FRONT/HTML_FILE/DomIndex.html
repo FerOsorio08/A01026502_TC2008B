@@ -401,7 +401,7 @@
     <div class="container">
         <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega,
             después del botón, un elemento que tenga el nombre completo.</p>
-       
+
         <label for="firstName">First name:</label>
         <input type="text" id="firstName"><br>
         <label for="lastName">Last name:</label>
@@ -414,7 +414,8 @@
     <div class="container">
         <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón
             correspondiente.</p>
-        <table id="sampleTable">
+
+        <table id="myTable">
             <tr>
                 <td>Row 1 column 1</td>
                 <td>Row 1 column 2</td>
@@ -424,15 +425,18 @@
                 <td>Row 2 column 2</td>
             </tr>
         </table><br>
-        <input id="btn-insert-r" type="button" value="Insert row">
-        <input id="btn-insert-c" type="button" value="Insert column">
+        <button id="submit-row">Add Row</button>
+        <button id="submit-column">Add Column</button>
+
+
     </div>
 
     <div class="container">
         <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente
             tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la
             posición que solicitaste, con la cadena de texto que solicitaste.</p>
-        <table id="myTable">
+
+        <table id="MyTable">
             <tr>
                 <td>Row1 cell1</td>
                 <td>Row1 cell2</td>
@@ -449,16 +453,23 @@
                 <td>Row3 cell3</td>
             </tr>
         </table>
-        <form><br>
-            <input id="rowIndex" type="text" placeholder="Row Index">
-            <input id="colIndex" type="text" placeholder="Col Index">
-            <input id="newValue" type="text" placeholder="New Value">
-            <input id="btn-change" type="button" value="Change content">
+        <label for="row">Row:</label>
+        <input type="number" id="row">
+
+        <label for="col">Column:</label>
+        <input type="number" id="col">
+
+        <label for="value">Value:</label>
+        <input type="text" id="value">
+        <button id="setValueBtn">Set Value</button>
+
+
     </div>
 
     <div class="container">
         <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser
             aleatorios.</p>
+
         <form>
             <select id="colorSelect">
                 <option>Red</option>
@@ -466,25 +477,66 @@
                 <option>White</option>
                 <option>Black</option>
             </select>
-            <input id="btn-add-color" type="button" value="Add color">
-            <input id="btn-rmv-color" type="button" value="Remove color">
+            <input type="button" id="addColor" value="Add Random Color">
+            <input type="button" id="removeColor" value="Remove Random Color">
+
         </form>
+
     </div>
 
     <div class="container">
         <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el
             width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que
             generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
-        <img id="imagenGato" src="http://placekitten.com/200/300">
+        <img id="catImage" src="https://placekitten.com/300/300" onmouseover="changeCatImage()">
+
+        <p>Width: <span id="width"></span></p>
+        <p>Height: <span id="height"></span></p>
+
     </div>
 
     <div class="container">
         <h2>Conclusiones</h2>
 
         <h4>Experiencia general</h4>
+        <p>
+            En general me parece que estas herramientas son muy útiles para programar, ya que te ayudan a ahorrar
+            tiempo.
+            Sin embargo no son perfectas, ya que a veces no entienden lo que quieres decir, y te generan código que no
+            siempre es correcto.
+            En mi caso, ChatGPT fue de más útilidad que Copilot, ya que con ChatGPT puedes hacer preguntar más
+            contextuales
+            y recibir respuestas más específicas. Aun así ChatGPT tampoco me parecio perfecto, al separar los scripts
+            del html
+            olvidaba agregrar los event-listers y el código no funcionaba. Esto fue un problema que pude arreglar ya
+            conociendo js
+            pero para una persona que no conoce este lenguaje puede ser un problema.
+        </p>
         <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
+        <p>
+            Usaría ChatGPT para hacer preguntas más específicas, como por ejemplo, "¿Cómo puedo hacer un
+            event-listener
+            en js?" o "¿Cómo puedo hacer un loop en js?". Usaría Copilot para hacer preguntas más generales, como
+            por ejemplo,
+            "¿Cómo puedo hacer un script en js?" o "¿Cómo puedo hacer un script en html?". ChatGPT también me es muy
+            útil cuando tengo problemas con el código ya que puede encontrar el error y encontrar una solución
+            <br>También creo que copiot es muy
+            útil cuando ya sabes que es lo que quieres hacer, ya que si no tienes idea entonces las sugerencias te
+            pueden parecer
+            confusas y poco útiles.
+        </p>
         <h4>Ventajas de usar AI para programar</h4>
+        <p>
+            Usar AI para programar puede ahorrar tiempo si sabes lo que haces. Al usar AI también puede ser más facil
+            encontrar errores en
+            código y solucionarlos.
+        </p>
         <h4>Desventajas de usar AI para programar</h4>
+        <p>
+            Usar AI para programar puede ser confuso si no sabes lo que haces, y en lugar de ahorrar tiempo lo gastarás
+            haciendo correcciones
+            y haciendo más preguntas para que el AI te entienda y para que tu le entiendas también.
+        </p>
     </div>
 
 </body>

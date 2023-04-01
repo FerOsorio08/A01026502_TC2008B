@@ -1,52 +1,57 @@
-*{
-    font-family: 'secondFont','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+* {
+    font-family: 'secondFont', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
 
 }
 
 
-.container{
+.container {
     padding: 10px;
     border-bottom: 1px solid black;
 }
 
-#copilot{
+#copilot {
     background-color: #addefc;
     color: #1a3580;
     font-family: Verdana;
 }
-#gpt{
+
+#gpt {
     background-color: #adfcce;
     color: #1a8065;
-    font-family:Verdana;
+    font-family: Verdana;
 }
-#correcto{
+
+#correcto {
     background-color: #f9adfc;
     color: #801a63;
-    font-family:Verdana;
+    font-family: Verdana;
 }
 
 a:link,
-  a:visited {
+a:visited {
     color: #801a63;
     text-align: center;
     text-decoration: none;
-  }
+}
 
-  a:hover,
-  a:active {
+a:hover,
+a:active {
     background-color: #f56ba5;
-  }
+}
 
 
-table, td{
+table,
+td {
     border: 1px solid black;
 }
-li{
+
+li {
     font-size: 2rem;
     text-decoration: underline;
 
 }
-h2{
+
+h2 {
     font-size: 2rem;
     background-color: #dadddf;
     font-family: 'nooks';
@@ -65,14 +70,17 @@ h2{
 
 /* Hide dropdown content by default */
 .dropdown-content {
-  display: none;
+    display: none;
 }
 
 /* Style trigger button/link */
 .dropdown-btn {
-  background-color: #eee; /* Change this to whatever color you like */
-  border: none;
-  padding: 5px 10px;
-  font-size: 16px;
-  cursor: pointer;
+
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #dadddf;
+    
 }
