@@ -62,3 +62,17 @@ h2{
     font-family: knickerbocker;
     src: url(../fonts_FILE/TT\ Knickerbockers\ Script\ Trial.otf);
 }
+
+/* Hide dropdown content by default */
+.dropdown-content {
+  display: none;
+}
+
+/* Style trigger button/link */
+.dropdown-btn {
+  background-color: #eee; /* Change this to whatever color you like */
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

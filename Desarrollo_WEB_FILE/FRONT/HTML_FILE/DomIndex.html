@@ -383,20 +383,32 @@
     <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te
         genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
 
-    <div class="container">
+    <div class="dropdown">
         <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
-        
-        <p id="mousePosition">Posición del mouse: </p>
+        <button class="dropdown-btn">click sol!</button>
+        <div class="dropdown-content">
+            <p id="mousePosition"><b>Posición del mouse:</b> </p>
+            <p id="gpt">ChatGPT</p>
+            <p id="position"></p>
+            <p id="copilot">Copilot</p>
+            <p id="mousePosition"></p>
+        </div>
+
+
+
     </div>
 
     <div class="container">
         <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega,
             después del botón, un elemento que tenga el nombre completo.</p>
-        <form id="form1">
-            First name: <input id="form-fname" type="text" name="fname"><br>
-            Last name: <input id="form-lname" type="text" name="lname"><br><br>
-            <input id="form1-submit" type="submit" value="Submit">
-        </form>
+       
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName"><br>
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName"><br>
+        <button id="submit-button">Submit</button><br>
+        <div id="fullName"></div>
+
     </div>
 
     <div class="container">
