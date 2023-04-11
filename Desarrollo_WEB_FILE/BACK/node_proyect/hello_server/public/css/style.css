@@ -1,0 +1,19 @@
+* {
+    font-family: 'secondFont', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../../../../FRONT/fonts_FILE/Food\ Zone.ttf);
+    font-family: secondFont;
+    src: url(../../../../../FRONT/fonts_FILE/Mahgin.otf);
+    font-family: nooks;
+    src: url(../../../../../FRONT/fonts_FILE/TT\ Nooks\ Script\ Trial\ Bold.otf);
+    font-family: knickerbocker;
+    src: url(../../../../../FRONT/fonts_FILE/TT\ Knickerbockers\ Script\ Trial.otf);
+}
+h1 {
+    font-size: 2rem;
+    background-color: #dadddf;
+    font-family: 'Calibri';
+}
